@@ -5,8 +5,10 @@ body {
     padding: 2em;
 }
 h1 {
-    margin: 5em;
-    max-width: 50%;
+    margin: 3em;
+    margin-bottom: 5em;
+    max-width: 80%;
+    font-size: 3em;
 }
 h1 > em {
     color: #1CA876;
@@ -16,7 +18,7 @@ h1 > em + em {
 }
 header {
     padding-top: 5em;
-    padding-bottom: 10em;
+    padding-bottom: 5em;
     flex-flow: column;
 }
 section {
