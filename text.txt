@@ -1,0 +1,54 @@
+O que são cookies?
+
+Um arquivo de texto que é enviado por um servidor web para o navegador de internet no momento em que o usuário acessa um endereço web, o arquivo é armazenado no disco rígido do dispositivo (computador ou smartphone).
+
+Exemplos de informações coletadas através de cookies:
+- Páginas e conteúdos acessados
+- Sistema operacional
+- Informações de localização
+- Tipo de navegador
+- Data e hora
+- Informações do dipositivo usado
+- Endereço de IP7
+
+
+O que é a LGPD?
+
+A Lei Geral de Proteção de Dados foi criada para o contexto brasileiro em 2018, é proposta para estabelecer princípios, direitos e obrigações relacionados a utilização de dados pessoais.
+
+Princípios da LGPD para o tratamento de dados:
+- finalidade
+- livre acesso
+- segurança
+- prestação de contas
+- adequação
+- transparência
+- prevenção da não discriminação
+- necessidade
+- qualidade dos dados
+- responsabilização
+
+
+Checklist
+Apenas o essencial
+
+1. Devemos ter um banner de consetimento, sem restringir a navegação.
+2. Livre escolha do usuário, deve ter botões para rejeitar, aceitar e gerenciar.
+3. Informar ao usuário quais aspectos da LGPD a empresa se propôs a cumprir.
+4. Diga quais dados serão coletados e qual a finalidade disso. Simples e direto.
+5. Tenha um modal de preferências. Dê escolha ao usuáriosobre quais cookies restringir.
+6. Evitar apresentar poĺıticas de privacidade com textos longos e com baixainteratividade do usuário.
+7. Permitir ao usuário alterar suas escolhas iniciais.
+
+
+Preferências
+
+Checklist
+Apenas deixe o usuário escolher
+
+1. Teremos um modal de preferências, ele surge quando clicamos no botão “Gerenciar preferências de cookies”.
+2. No mínimo dois botões:
+Recusar todas opções de cookies
+Confirmar minhas escolhas
+3. Cada “categoria” de cookie deve ter uma descrição detalhada sobre o que é. Mas de forma simples, não desperdice palavras.
+4. Evitar colocar cookies como obrigatórios, portanto cada item da lista deve ter um checkbox para ser selecionado.
