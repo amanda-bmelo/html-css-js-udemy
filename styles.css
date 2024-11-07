@@ -2,7 +2,29 @@ body {
     font-family: Georgia;
     color: #323232;
     background-color: #FBFBFB;
-    padding: 2em;
+}
+nav {
+    position: sticky;
+    top: 0.5em;
+    border-radius: 2em;
+    padding: 1em;
+    margin-top: 0.5em;
+    background-color: #1C7EA8;
+}
+nav ul li {
+    display: inline;
+    margin: 0.25rem;
+    margin-inline: 0.5rem;
+    margin-block: 0;
+    line-height: 1.5rem;
+}
+nav ul li a {
+    color: #FBFBFB;
+    font-weight: bolder;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    color: #a3e4ff;
 }
 h1 {
     margin: 3em;
@@ -26,10 +48,12 @@ section {
     margin-bottom: 2em;
 }
 .flex, .container-flex {
-    align-items: center;
-    justify-content: center;
     display: flex;
     flex-wrap: nowrap;
+}
+.container-center, .container-flex  {
+    align-items: center;
+    justify-content: center;
 }
 .container-flex {
     flex-flow: row;
@@ -53,3 +77,9 @@ h1, h2, h3, h4, p {
 footer {
     background: linear-gradient(90deg, rgba(204, 8, 8, 0.25) 0%, rgba(204, 149, 8, 0.25) 50%, rgba(74, 114, 137, 0.25) 100%);
 }
+button {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+}  
