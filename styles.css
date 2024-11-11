@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
 body {
     font-family: Georgia;
     color: #323232;
@@ -45,7 +50,7 @@ header {
 }
 section {
     padding: 2em;
-    margin-bottom: 2em;
+    margin-bottom: auto;
 }
 .flex, .container-flex {
     display: flex;
@@ -61,10 +66,11 @@ section {
 .box {
     background-color: #E7E7E7;
     border-radius: 1em;
+    max-width: fit-content;
 }
 div.box {
     padding: 2em;
-    max-width: 40%;
+    max-width: 36em;
 }
 img.image {
     width: 20%;
@@ -73,13 +79,59 @@ img.image {
 }
 h1, h2, h3, h4, p {
     text-align: center;
+    margin: 1em;
 }
-footer {
-    background: linear-gradient(90deg, rgba(204, 8, 8, 0.25) 0%, rgba(204, 149, 8, 0.25) 50%, rgba(74, 114, 137, 0.25) 100%);
+section.box {
+    margin: 2em;
+}
+h2 {
+    font-size: 2em;
+}
+h3.title {
+    font-size: larger;
+    margin-bottom: 0;
+}
+h4.subtitle {
+    margin-top: 0;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: large;
+}
+section#checklist-banner {
+    margin-left: 2em;
+    margin-right: 2em;
+    justify-self: center;
+}
+section#checklist-preferences {
+    margin-left: 2em;
+    margin-right: 2em;
+    justify-self: center;
+    max-width: 61em;
+}
+img#model-banner {
+    width: 90%;
+    max-width: min-content;
+    margin: 2em;
+    justify-self: center;
+    align-self: center;
+}
+img#model-preference {
+    width: 40%;
+    margin: 2em;
 }
 button {
     border: none;
     cursor: pointer;
     appearance: none;
     background-color: inherit;
-}  
+}
+footer {
+    margin-top: auto;
+    width: 100%;
+    padding: 2rem;
+    background: linear-gradient(90deg, rgba(204, 8, 8, 0.25) 0%, rgba(204, 149, 8, 0.25) 50%, rgba(74, 114, 137, 0.25) 100%);
+}
+footer img {
+    padding-left: 5%;
+    padding-right: 5%;
+}
