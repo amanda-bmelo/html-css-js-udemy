@@ -8,6 +8,10 @@ body {
     color: #323232;
     background-color: #FBFBFB;
 }
+
+
+/* nav, header */
+
 nav {
     position: sticky;
     top: 0.5em;
@@ -21,7 +25,7 @@ nav ul li {
     margin: 0.25rem;
     margin-inline: 0.5rem;
     margin-block: 0;
-    line-height: 1.5rem;
+    line-height: 3rem;
 }
 nav ul li a {
     color: #FBFBFB;
@@ -31,6 +35,24 @@ nav ul li a {
 nav ul li a:hover {
     color: #a3e4ff;
 }
+button#cookie-for-nav {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: inherit;
+}
+img#cookie {
+    padding-left: 10%;
+}
+header {
+    padding-top: 5em;
+    padding-bottom: 5em;
+    flex-flow: column;
+}
+
+
+/* text */
+
 h1 {
     margin: 3em;
     margin-bottom: 5em;
@@ -43,11 +65,36 @@ h1 > em {
 h1 > em + em {
     color: #1C7EA8;
 }
-header {
-    padding-top: 5em;
-    padding-bottom: 5em;
-    flex-flow: column;
+h1, h2, h3, p {
+    text-align: center;
+    margin: 1em;
 }
+h4 {
+    padding-left: 3%;
+    margin: 1em;
+}
+ul {
+    padding-left: 10%;
+}
+h2 {
+    font-size: 2em;
+}
+h3.title {
+    font-size: larger;
+    margin-bottom: 0;
+}
+h5.subtitle {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 3%;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: large;
+}
+
+
+/* box, section */
+
 section {
     padding: 2em;
     margin-bottom: auto;
@@ -70,43 +117,26 @@ section {
 }
 div.box {
     padding: 2em;
-    max-width: 36em;
-}
-img.image {
-    width: 20%;
-    margin: 2em;
-    justify-self: center;
-}
-h1, h2, h3, h4, p {
-    text-align: center;
-    margin: 1em;
+    max-width: 40em;
 }
 section.box {
     margin: 2em;
 }
-h2 {
-    font-size: 2em;
-}
-h3.title {
-    font-size: larger;
-    margin-bottom: 0;
-}
-h4.subtitle {
-    margin-top: 0;
-    font-style: italic;
-    font-weight: lighter;
-    font-size: large;
-}
-section#checklist-banner {
+section#checklist-banner, section#checklist-preferences {
     margin-left: 2em;
     margin-right: 2em;
     justify-self: center;
 }
 section#checklist-preferences {
-    margin-left: 2em;
-    margin-right: 2em;
+    max-width: 65em;
+}
+
+/* image */
+
+img.image {
+    width: 20%;
+    margin: 2em;
     justify-self: center;
-    max-width: 61em;
 }
 img#model-banner {
     width: 90%;
@@ -119,19 +149,26 @@ img#model-preference {
     width: 40%;
     margin: 2em;
 }
-button {
-    border: none;
-    cursor: pointer;
-    appearance: none;
-    background-color: inherit;
+footer img {
+    padding-left: 5%;
+    padding-right: 5%;
 }
+
+/* input, button */
+
+input[type="checkbox"]:checked + span{
+    text-decoration: line-through;
+}
+input[type="checkbox"]:checked {
+    accent-color: #1CA876;
+}
+
+
+/* footer */
+
 footer {
     margin-top: auto;
     width: 100%;
     padding: 2rem;
     background: linear-gradient(90deg, rgba(204, 8, 8, 0.25) 0%, rgba(204, 149, 8, 0.25) 50%, rgba(74, 114, 137, 0.25) 100%);
-}
-footer img {
-    padding-left: 5%;
-    padding-right: 5%;
 }
