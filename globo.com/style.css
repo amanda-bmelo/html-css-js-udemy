@@ -1,5 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
-}  
+    font: inherit;
+    vertical-align: baseline;
+}
+body {
+    font-family: Inter, "Helvetica Neue", Helvetica, Arial, "Segoe UI", sans-serif;
+    color: #2f3134;
+}
+header {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    background: #fff;
+    display: grid;
+    grid-template-columns: auto 1fr 1fr;
+    grid-template-rows: auto 44px;
+    column-gap: 0;
+    align-items: center;
+    margin-bottom: 0;
+    grid-template-columns: 1fr clamp(142px,22vw,174px) 1fr;
+    grid-template-rows: auto 44px;
+}
+.menu-desktop {
+    display: block;
+}
+.header-titles {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: auto;
+    margin-top: auto;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    padding: 10px 12px;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    display: block;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+.homeui-tc-g1 {
+    color: #c4170c;
+}
+.homeui-tc-oglobo {
+    color: #1e4c9a;
+}
+.homeui-tc-valor {
+    color: #006767;
+}
+.homeui-tc-ge {
+    color: #06aa48;
+}
+.homeui-tc-cartola {
+    color: #ff7400;
+}
+.homeui-tc-globoplay {
+    color: #fb0234;
+}
+.homeui-tc-gshow {
+    color: #ff6700;
+}
+.homeui-tc-receitas {
+    color: #a5147d;
+}
+.homeui-tc-quem {
+    color: #333;
+}
+.homeui-tc-podcast {
+    color: #4f5257
+}

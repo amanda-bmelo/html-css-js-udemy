@@ -1,11 +1,147 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Globo.com</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header>
+        <div class="header-grid-globo">
+            <a href="https://globo.com/">
+                <h1 class="header-grid__logo__link--icon">
+                    <svg width="174" height="36" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174 36" role="img">
+                    <title>Globo.com, aqui você encontra notícias da sua região, esportes, entretenimento e muito mais</title>
+                    <g clip-path="url(#a)"><path d="M24.892.215c-1.213-.558-2.08 0-2.08 1.332v24.96c0 1.33.824 1.89 2.08 1.33l1.604-.687c.996-.472 1.473-1.116 1.473-2.19V3.135c0-1.074-.477-1.761-1.474-2.19l-1.603-.73ZM63.02 7.991c-2.036 0-3.986.859-5.286 2.19V1.376c0-.644-.39-.988-.996-.988h-3.12c-.65 0-.996.387-.996.988v25.303c0 .644.39.988.996.988h2.817c.65 0 .996-.387.996-.988v-1.074c1.213 1.375 3.466 2.406 5.72 2.406 4.895 0 9.14-4.425 9.14-10.01 0-5.67-4.288-10.01-9.27-10.01Zm-46.662.343c-.65 0-.996.387-.996.988v1.074c-1.127-1.374-3.25-2.405-5.33-2.405C4.92 7.99.5 12.33.5 18c0 5.67 4.16 9.579 9.402 9.579 2.34 0 4.159-1.074 5.199-2.19-.044 3.951-2.123 5.756-5.763 5.756-1.906-.043-3.726-.602-5.805-1.934-.563-.386-1.17-.257-1.473.344L.803 32.005c-.303.558-.216 1.117.39 1.503C3.793 35.184 6.87 36 9.512 36c6.932 0 10.745-3.694 10.745-12.243V9.322c0-.644-.39-.988-.997-.988h-2.903Zm23.916-.343c-5.416 0-9.965 4.21-9.965 10.01 0 5.799 4.463 10.009 9.965 10.009 5.416 0 9.965-4.21 9.965-10.01S45.776 7.99 40.273 7.99Zm44.062 0c-5.415 0-9.964 4.21-9.964 10.01 0 5.799 4.462 10.009 9.965 10.009C89.75 28.01 94.3 23.8 94.3 18S89.838 7.99 84.335 7.99Zm32.148 12.587c-.563 0-.866.258-1.17.73-.736 1.289-1.993 1.804-3.509 1.804-2.643 0-4.679-2.19-4.679-5.112 0-2.964 2.079-5.112 4.679-5.112 1.473 0 2.6.601 3.336 1.718.303.516.693.73 1.213.73h2.38c.693 0 1.083-.429.866-1.116-1.126-3.652-4.766-6.186-8.882-6.186-5.285 0-9.661 4.21-9.661 10.01 0 5.799 4.202 10.009 9.661 10.009 4.203 0 7.886-2.492 8.969-6.315.173-.688-.26-1.074-.91-1.074h-3.293v-.086ZM132.427 7.99c-5.416 0-9.965 4.21-9.965 10.01 0 5.799 4.463 10.009 9.965 10.009 5.416 0 9.965-4.21 9.965-10.01s-4.462-10.01-9.965-10.01Zm32.971 0c-2.08 0-4.203.859-5.676 2.75-1.083-1.59-2.902-2.75-5.199-2.75-2.253 0-3.856.988-4.896 2.32v-.989c0-.644-.389-.988-.996-.988h-2.816c-.65 0-.997.387-.997.988v17.313c0 .644.39.988.997.988h2.119c.65 0 .997-.387.997-.988V17.14c0-2.706 1.343-4.339 3.466-4.339 2.079 0 3.206 1.418 3.206 4.167v9.666c0 .644.39.988.996.988h2.12c.65 0 .996-.387.996-.988V17.14c0-2.706 1.343-4.339 3.466-4.339s3.207 1.418 3.207 4.167v9.666c0 .644.389.988.996.988h2.12c.649 0 .996-.387.996-.988V16.368c-.087-5.112-3.076-8.377-8.102-8.377ZM10.378 23.069c-2.643 0-4.852-2.062-4.852-5.112 0-3.093 2.21-5.112 4.852-5.112 2.643 0 4.853 2.062 4.853 5.112-.043 3.05-2.21 5.112-4.853 5.112Zm29.895.043c-2.686 0-4.852-2.148-4.852-5.112s2.166-5.112 4.852-5.112c2.686 0 4.853 2.148 4.853 5.112.043 2.964-2.167 5.112-4.853 5.112Zm22.14 0c-2.6 0-4.81-2.062-4.81-5.112 0-3.05 2.167-5.112 4.81-5.112 2.6 0 4.809 2.062 4.809 5.112 0 3.093-2.21 5.112-4.81 5.112Zm21.922 0c-2.686 0-4.852-2.148-4.852-5.112s2.166-5.112 4.852-5.112c2.687 0 4.853 2.148 4.853 5.112.043 2.964-2.166 5.112-4.853 5.112Zm48.092 0c-2.686 0-4.852-2.148-4.852-5.112s2.166-5.112 4.852-5.112c2.686 0 4.853 2.148 4.853 5.112.043 2.964-2.123 5.112-4.853 5.112Zm-34.27-1.761c-1.734 0-3.337 1.332-3.337 3.308 0 2.019 1.603 3.35 3.336 3.35 1.733 0 3.337-1.331 3.337-3.307 0-2.02-1.604-3.351-3.337-3.351Z" fill="url(#b)"></path></g><defs><linearGradient id="b" x1="30.251" y1="18.001" x2="168.396" y2="55.977" gradientUnits="userSpaceOnUse"><stop stop-color="#0420FC"></stop><stop offset="1" stop-color="#03B4FC"></stop></linearGradient><clipPath id="a"><path fill="#fff" transform="translate(.5)" d="M0 0h173v36H0z"></path></clipPath></defs></svg>
+                </h1>
+            </a>
+        </div>
+        <div class="main-menu">
+            <button id="menu-toggle" type="button" aria-label="Menu" aria-expanded="false" data-tracking-disabled="true"><img class="menu-icon" src="https://s3.glbimg.com/v1/AUTH_fd78dc4be9404a2e92b908ade306e9e6/prod/header_menu_svgs/menu-button.svg" width="18" height="18" aria-hidden="true"><span>Menu</span></button>
+        </div>
+        <div class="auxiliary-menu">
+            <div class="auxiliary-menu-login">
+
+            </div>
+            <div class="auxiliary-menu-search">
+
+            </div>
+        </div>
+        <nav class="menu-desktop">
+            <ul class="header-titles">
+                <li class="items"><a class="homeui-tc-g1" href="https://g1.globo.com/">g1</a></li>
+                <li class="items"><a class="homeui-tc-oglobo" href="https://oglobo.globo.com/">o globo</a></li>
+                <li class="items"><a class="homeui-tc-valor" href="https://valor.globo.com/">valor</a></li>
+                <li class="items"><a class="homeui-tc-ge" href="https://ge.globo.com/">ge</a></li>
+                <li class="items"><a class="homeui-tc-cartola" href="https://cartola.globo.com/">cartola</a></li>
+                <li class="items"><a class="homeui-tc-globoplay" href="https://globoplay.globo.com/">globoplay</a></li>
+                <li class="items"><a class="homeui-tc-gshow" href="https://gshow.globo.com/">gshow</a></li>
+                <li class="items"><a class="homeui-tc-receitas" href="https://receitas.globo.com/">receitas</a></li>
+                <li class="items"><a class="homeui-tc-quem" href="https://quem.globo.com/">quem</a></li>
+                <li class="items"><a class="homeui-tc-poscasts" href="https://globo.com/podcasts/">podcast</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="g1-news">
+            <div>
+                <img src="https://s2-g1.glbimg.com/sl3AWFY-iNhBxzSzMU-ZOPsW_DE=/0x0:1920x1080/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2023/8/K/BRtgt3Tu2DBFzyrqohXg/globo-canal-4-20231222-2000-frame-77572.jpeg" alt="Projeto de lei que regulamenta mercado de carbono no Brasil já foi aprovado pela Câmara">
+                <h1>
+                    <a class="homeui-tc-g1" href="https://g1.globo.com/politica/noticia/2024/11/13/em-meio-a-cop-senado-tenta-votar-regulacao-do-mercado-de-carbono-no-brasil-apos-serie-de-adiamentos.ghtml">
+                        Em meio à COP, Senado tenta votar regulação do mercado de carbono
+                    </a>
+                </h1>
+                <ul>
+                    <li>Exército terá 7.500 militares no G20; PM fará cinturão em reuniões e hotéis</li>
+                    <li>Ludmilla vai participar do G20 Favelas: 'Voz para fortalecer as periferias'</li>
+                    <li>Previdência dos militares no alvo de cortes: quanto é a conta bilionária</li>
+                </ul>
+            </div>
+            <div>
+                <img src="https://s2-g1.glbimg.com/9ALbkDRCoTuZBwNWSmdURvSNwlc=/540x304/top/smart/https://i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/t/g/1gOyCfRZyjp5cJU8JIMQ/pedrobonvivant.jpg" alt="Blogueiros em transporte p[ublico lotado.">
+                <h2>
+                    <a class="homeui-tc-g1" href="https://g1.globo.com/trabalho-e-carreira/noticia/2024/11/13/conheca-os-blogueiros-clts-que-mostram-a-rotina-e-os-perrengues-de-trabalho-nas-redes-sociais.ghtml">
+                        'Blogueiros CLTs': os perrengues na rotina do trabalho
+                    </a>
+                </h2>
+                <ul>
+                    <li>6x1, 5x2, 4x4, 12x36: quais as escalas de trabalho</li>
+                </ul>
+            </div>
+            <div>
+                <img src="https://s2-g1.glbimg.com/SXYF8bWvPt3NkAYFTBT58C8wM4M=/0x0:5000x3333/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/A/Q/QXDcYCQ2aZghjym6wJHQ/2024-11-11t182747z-1256537948-rc2qu9au0ddv-rtrmadp-3-tesla-stock-options.jpg" alt="Elon Musk ao lado de Donald Trump durante comício presidencial em outubro de 2024">
+                <h2>
+                    <a class="homeui-tc-g1" href="https://g1.globo.com/mundo/eleicoes-nos-eua/2024/noticia/2024/11/12/trump-diz-que-vai-nomear-elon-musk-para-departamento-de-eficiencia-governamental.ghtml">Trump cria 'pasta da eficiência' para Elon Musk no governo</a>
+                </h2>
+                <ul>
+                    <li>Trump se reúne com Biden hoje na Casa Branca</li>
+                </ul>
+            </div>
+            <div>
+                <img src="https://s2-home-globo.glbimg.com/EKNgrlLoT78XQlr4hEgkw0l5WZk=/375x815:3667x2668/fit-in/1030x580/middle/smart/filters:strip_icc():strip_exif()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/E/P/C43tbuTF20RErYwi9hsQ/g1-galeaog201.jpg" alt="Rio espera aumento de 87% nos voos durante o G20">
+                <h2>
+                    <a class="homeui-tc-g1" href="https://g1.globo.com/rj/rio-de-janeiro/g20/noticia/2024/11/13/galeao-espera-aumento-de-87percent-nos-voos-e-68percent-em-passageiros-no-g20.ghtml">Rio espera aumento de 87% nos voos durante o G20</a>
+                </h2>
+                <ul>
+                    <li>Feriado terá temporais em boa parte do país</li>
+                </ul>
+            </div>
+            <div>
+                <img src="https://s2-home-globo.glbimg.com/BpX81xvgajG0C_QYbzneX8YM_6Q=/0x0:1200x675/fit-in/1030x580/middle/smart/filters:strip_icc():strip_exif()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/R/e/4UGvQDRpy0aSlXN7Jibw/vinicius-gritzbach-4.jpg" alt="Quem mandou matar delator do PCC? 3 hipóteses">
+                <h2>
+                    <a class="homeui-tc-g1" href="https://g1.globo.com/sp/sao-paulo/noticia/2024/11/13/quem-mandou-matar-delator-no-aeroporto-veja-quais-sao-as-3-principais-hipoteses-investigadas.ghtml">Quem mandou matar delator do PCC? 3 hipóteses</a>
+                </h2>
+                <ul>
+                    <li>Gritzbach ligou para advogado ao pousar</li>
+                </ul>
+            </div>
+            <div>
+                <img src="https://s2-g1.glbimg.com/JzByXadmFfJMPpriYw0DUpDfOz4=/0x96:683x679/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/y/y/pOFLBHRrOD372wVwoTwg/trufas-que-negras-que-lembram-bombons-de-chocolate.png" alt="Algumas trufas têm formato pequeno, redondo e escuro, lembrando bombons de chocolate.">
+                <h2>
+                    <a class="homeui-tc-g1" href="https://g1.globo.com/economia/agronegocios/noticia/2024/11/13/trufas-por-que-esses-fungos-comestiveis-considerados-diamantes-da-terra-sao-tao-caros.ghtml">Por que as trufas, 'diamantes da terra', são tão caras</a>
+                </h2>
+                <ul>
+                    <li>7 alimentos que têm mais proteína que ovos</li>
+                </ul>
+            </div>
+            <div>
+                <img src="https://s2-home-globo.glbimg.com/TauSVyBjwwXRkmM-LzapwxwRYb0=/119x48:763x421/fit-in/1030x580/middle/smart/filters:strip_icc():strip_exif()/i.s3.glbimg.com/v1/AUTH_da025474c0c44edd99332dddb09cabe8/internal_photos/bs/2024/0/V/YT5yVBS7ACiV6NMkoabw/img20231004223053063-768x473.jpg" alt="Fim do 6x1: PEC já pode tramitar com 194 assinaturas">
+                <h2>
+                    <a class="homeui-tc-g1" href="">Fim do 6x1: PEC já pode tramitar com 194 assinaturas</a>
+                </h2>
+                <ul>
+                    <li>Veja escalas de trabalho: 6x1, 5x2, 4x4, 12hx36h</li>
+                </ul>
+            </div>
+        </section>
+        <section id="ge-news">
+            <div>
+                <img src="https://s2-home-globo.glbimg.com/dD_AmC7HebG-yDctG6KSyxl0bjA=/465x271:1078x616/fit-in/1030x580/middle/smart/filters:strip_icc():strip_exif()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/B/B/9fk3QRTiifOaEOPBr9Jw/imagem-do-whatsapp-de-2024-11-02-a-s-02.17.48-684375d0.jpg" alt="Ex-São Paulo e Timão conta como perdeu tudo antes do reinício na Ásia">
+                <h2>
+                    <a class="homeui-tc-ge" href="https://ge.globo.com/mg/triangulo-mineiro/futebol/noticia/2024/11/13/ex-sao-paulo-e-corinthians-conta-como-perdeu-tudo-antes-de-recomecar-na-asia-nao-juntei-um-real.ghtml">Ex-São Paulo e Timão conta como perdeu tudo antes do reinício na Ásia</a>
+                </h2>
+            </div>
+            <div>
+                <img src="https://s2-home-globo.glbimg.com/xzzDLKsyLVGr6t5QsAD4ALOnoRU=/1075x65:1938x551/fit-in/1030x580/middle/smart/filters:strip_icc():strip_exif()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/y/h/REMK13SSSPROxtObLkCQ/fabriciogerson.png" alt="Sampaoli pede ao Rennes as contratações de Gerson e Fabrício Bruno">
+                <h2>
+                    <a class="homeui-tc-ge" href="https://ge.globo.com/futebol/times/flamengo/noticia/2024/11/13/sampaoli-pede-a-diretoria-do-rennes-os-nomes-de-gerson-e-fabricio-bruno-do-flamengo.ghtml">Sampaoli pede ao Rennes as contratações de Gerson e Fabrício Bruno</a>
+                </h2>
+                <ul>
+                    <li>Blog: atitude de Gabi irritou Gerson, Arrasca e B. Henrique</li>
+                    <li>Coritiba anuncia saída de Alef Manga, Robson e mais três</li>
+                </ul>
+            </div>
+            <div>
+                <img src="https://s2-home-globo.glbimg.com/vNIK-OwtesOJqTP-y2X_KQTr6c8=/427x101:975x409/fit-in/1030x580/middle/smart/filters:strip_icc():strip_exif()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2024/2/1/pyDd8xQvKdXE0B7gB9hw/vini.jpg" alt="Dorival revela escalação para a Seleção enfrentar a Venezuela amanhã">
+                <h2>
+                    <a class="homeui-tc-ge" href="https://ge.globo.com/futebol/selecao-brasileira/noticia/2024/11/13/dorival-junior-explica-tatica-na-selecao-brasileira-liberdade-de-movimento-e-fundamental.ghtml">Dorival revela escalação para a Seleção enfrentar a Venezuela amanhã</a>
+                </h2>
+                <ul>
+                    <li>Novidade de Dorival, Murillo entra na mira do Real e Barcelona</li>
+                </ul>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
