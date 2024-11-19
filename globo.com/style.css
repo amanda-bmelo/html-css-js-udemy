@@ -1,5 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
+/* Variaveis */
+:root {
+    --g1-color: #c4170c;
+    --oglobo-color: #1e4c9a;
+    --valor-color: #006767;
+    --ge-color: #06aa48;
+    --cartola-color: #ff7400;
+    --globoplay-color: #fb0234;
+    --gshow-color: #ff6700;
+    --receitas-color: #a5147d;
+    --quem-color: #333;
+    --podcast-color: #4f5257;
+}
+
+/* CSS Reset */
 * {
     margin: 0;
     padding: 0;
@@ -18,6 +33,7 @@ body {
     font-family: Inter, "Helvetica Neue", Helvetica, Arial, "Segoe UI", sans-serif;
     color: #2f3134;
 }
+
 
 /* HEADER */
 header {
@@ -41,65 +57,87 @@ header {
     white-space: nowrap;
     padding: 10px 12px;
 }
+
+
 /* MENU */
-.menu .item.g1 {
-    font-weight: bolder;
-    color: #c4170c;
+.g1, .g1 a {
+    color: var(--g1-color);
 }
-.menu .item.oglobo {
-    color: #1e4c9a;
+.oglobo, .oglobo a {
+    color: var(--oglobo-color);
 }
-.menu .item.valor {
-    color: #006767;
+.valor a {
+    color: var(--valor-color);
 }
-.menu .item.ge {
-    color: #06aa48;
+.ge, .ge a {
+    color: var(--ge-color);
 }
-.menu .item.cartola {
-    color: #ff7400;
+.cartola a {
+    color: var(--cartola-color);
 }
-.menu .item.globoplay {
-    color: #fb0234;
+.globoplay a {
+    color: var(--globoplay-color);
 }
-.menu .item.gshow{
-    color: #ff6700;
+.gshow, .gshow a{
+    color: var(--gshow-color);
 }
-.menu .item.receitas {
-    color: #a5147d;
+.receitas a {
+    color: var(--receitas-color);
 }
-.menu .item.quem {
-    color: #333;
+.quem a {
+    color: var(--quem-color);
 }
-.menu .item.podcast {
-    color: #4f5257
+.podcast a {
+    color: var(--podcast-color);
 }
 
 
 /* SECTIONS */
+section {
+    margin: 2rem;
+}
+a {
+    font-weight: bolder;
+}
+div {
+    margin: 1rem;
+}
 ul {
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     list-style-type: disc;
 }
+.g1-news .item .detail::marker {
+    color: var(--g1-color);
+}
+.ge-news .item .detail::marker {
+    color: var(--ge-color);
+}
+.item {
+    overflow: hidden;
+    max-height: 100rem;
+    max-width: 25rem;
+}
+.item img {
+    max-width: 100%;
+    max-height: 30rem;
+    margin-bottom: 1rem;
+}
+
 .big-news {
     color: #fff;
     background-color: #c4170c;
-    margin: 2rem;
     border-radius: 2em;
     overflow: hidden;
     max-height: 200rem;
     max-width: 50rem;
     position: relative;
 }
-.big-img {
-    max-width: 100%;
-    max-height: 30rem;
-    margin-bottom: 1rem;
-}
 .big-title {
-    padding-left: 2rem;
+    padding-left: 1rem;
     font-size: larger;
-    font-weight: bold;
     color: #fff;
 }
 .big-news li::marker {
