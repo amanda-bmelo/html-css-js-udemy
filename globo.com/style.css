@@ -40,13 +40,26 @@ header {
     background: #fff;
     display: grid;
     align-items: center;
-    margin: 1rem;
+}
+.main-menu {
+    display: flex;
+    margin: 0 0 0 2rem;
+}
+button {
+    background-color: #fff;
+    margin-right: 1rem;
+}
+nav {
+    position: sticky;
+    top: 0;
 }
 .menu {
     text-align: center;
     text-decoration: none;
     white-space: nowrap;
     overflow: hidden;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
 }
 .items {
     display: grid;
