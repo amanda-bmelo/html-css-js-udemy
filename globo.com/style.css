@@ -25,6 +25,7 @@
 }
 a {
     text-decoration: none;
+    color: inherit;
 }
 ul {
     display: block;
@@ -62,10 +63,37 @@ nav {
     border-bottom: 1px solid #eee;
 }
 .items {
-    display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: minmax(90px, auto);
-    gap: 10px;
+    padding: 5px 15% 5px 15%;
+    display: flex;
+    justify-content: space-between;
+    /* grid-auto-flow: column;
+    grid-auto-columns: minmax(90px, auto); */
+    gap: 5px;
+}
+@media only screen and (max-width: 600px) {
+    .valor {
+        display: none;
+    }
+    .cartola {
+        display: none;
+    }
+    .receitas {
+        display: none;
+    }
+    .quem {
+        display: none;
+    }
+    .podcast {
+        display: none;
+    }
+    .items {
+        padding: 5px 5% 5px 5%;
+    }
+}
+@media only screen and (max-width: 1200px) and (min-width: 600px) {
+    .items {
+        padding: 5px 5% 5px 5%;
+    }
 }
 .menu li {
     text-align: center;
@@ -74,34 +102,34 @@ nav {
 
 
 /* MENU */
-.g1, .g1 a {
+.g1 {
     color: var(--g1-color);
 }
-.oglobo, .oglobo a {
+.oglobo {
     color: var(--oglobo-color);
 }
-.valor a {
+.valor {
     color: var(--valor-color);
 }
-.ge, .ge a {
+.ge {
     color: var(--ge-color);
 }
-.cartola a {
+.cartola {
     color: var(--cartola-color);
 }
-.globoplay a {
+.globoplay {
     color: var(--globoplay-color);
 }
-.gshow, .gshow a{
+.gshow {
     color: var(--gshow-color);
 }
-.receitas a {
+.receitas {
     color: var(--receitas-color);
 }
-.quem a {
+.quem {
     color: var(--quem-color);
 }
-.podcast a {
+.podcast {
     color: var(--podcast-color);
 }
 
@@ -116,7 +144,7 @@ a {
 div {
     margin: 1rem;
 }
-ul {
+section ul {
     padding-left: 2rem;
     padding-right: 2rem;
     padding-top: 1rem;
