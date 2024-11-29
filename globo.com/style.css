@@ -44,20 +44,24 @@ header {
 }
 .main-menu {
     display: flex;
-    margin: 0 0 0 2rem;
+    margin: 0 30px 0 30px;
     justify-content: space-between;
     align-items: center;
 }
 .login-search {
     display: flex;
     align-items: center;
-}
-.login {
-    border-right: 1px solid #eee;
+    overflow: hidden;
 }
 .login>svg, .search>svg {
     width: 40px;
     height: 40px;
+}
+.search {
+    margin: 0;
+    padding-left: 15%;
+    padding-top: 15%;
+    border-left: 1px solid #eee;
 }
 button {
     background-color: #fff;
@@ -75,12 +79,10 @@ nav {
     border-top: 1px solid #eee;
     border-bottom: 1px solid #eee;
 }
-.items {
+.menu .items {
     padding: 5px 15% 5px 15%;
     display: flex;
     justify-content: space-between;
-    /* grid-auto-flow: column;
-    grid-auto-columns: minmax(90px, auto); */
     gap: 5px;
 }
 @media only screen and (max-width: 600px) {
@@ -99,12 +101,12 @@ nav {
     .podcast {
         display: none;
     }
-    .items {
+    .menu .items {
         padding: 5px 5% 5px 5%;
     }
 }
 @media only screen and (max-width: 1200px) and (min-width: 600px) {
-    .items {
+    .menu .items {
         padding: 5px 5% 5px 5%;
     }
 }
@@ -159,7 +161,7 @@ a {
     font-weight: bolder;
 }
 div {
-    margin: 1rem;
+    margin: 10px;
 }
 section ul {
     padding-left: 2rem;
@@ -219,17 +221,66 @@ section .item {
 .big-news {
     color: #fff;
     background-color: #c4170c;
-    border-radius: 2em;
+    border-radius: 20px;
     overflow: hidden;
-    max-height: 200rem;
-    max-width: 50rem;
+    max-height: 700px;
+    max-width: 750px;
     position: relative;
+    align-self: center;
 }
 .big-title {
-    margin-left: 1rem;
+    padding-left: 15px;
+    position: relative;
     font-size: larger;
     color: #fff;
 }
+.big-news h1 {
+    padding-left: 15px;
+    text-indent: -15px;
+}
 .big-news li::marker {
     color: #ffb7b2;
+}
+.group-ge-gshow {
+    display: flex;
+}
+
+/* Mobile and Tablet adjusts */
+@media only screen and  (max-width: 1200px)  and (min-width: 450px){
+    main {
+        flex-direction: column;
+        margin: 2% 2%;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    main {
+        flex-direction: column;
+        margin: 2% 2%;
+    }
+    .main-menu {
+        justify-content: start;
+    }
+    .g1-row {
+        flex-direction: column;
+    }
+    .ge-news {
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid #eee;
+        padding-bottom: 5%;
+    }
+    .g1-row#row-after-big-news {
+        border-top: none;
+        border-bottom: none;
+    }
+    .group-ge-gshow {
+        flex-direction: column;
+    }
+    .login-search {
+        display: none;
+    }
+    .gshow-news {
+        padding-top: 5%;
+    }
 }
