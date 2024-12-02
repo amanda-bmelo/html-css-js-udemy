@@ -236,6 +236,7 @@ section .item {
 }
 .big-news h1 {
     padding-left: 15px;
+    padding-right: 15px;
     text-indent: -15px;
 }
 .big-news li::marker {
@@ -282,5 +283,8 @@ section .item {
     }
     .gshow-news {
         padding-top: 5%;
+    }
+    .big-title {
+        font-size: large;
     }
 }
