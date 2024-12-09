@@ -1,0 +1,17 @@
+/* RESET CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-red: #F55B64;
+    --secondary-red: #C2373F;
+    --primary-white: #F9F9F9;
+    --primary-black: #131730;
+    --title-family-font: "Krona One", sans-serif;
+    --text-family-font: 'Numans', sans-serif;
+    --shades-of-blue: linear-gradient(180deg, #000000 0%, #26327F 100%);
+}
+
