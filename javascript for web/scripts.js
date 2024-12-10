@@ -29,10 +29,17 @@ function addItem(event) {
     const containerButtons = document.createElement("div");
     addButtons(containerButtons);
     
+    // Data e horário do item adicionado
+    const itemData = document.createElement("p");
+    itemData.innerText = `${new Date().toLocaleDateString("en", { weekday: "long" })} (${new Date().toLocaleDateString()}) at ${new Date().toLocaleTimeString("en", { hour: "numeric", minute: "numeric" })}`;
+    itemData.classList.add("item-time");
+
     // Unindo os conteúdos dentro da lista
     containerItemList.appendChild(containerItemName);
     containerItemList.appendChild(containerButtons);
+
     itemList.appendChild(containerItemList);
+    itemList.appendChild(itemData);
     shopList.appendChild(itemList);
 }
 

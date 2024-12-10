@@ -34,7 +34,7 @@ ul {
 body {
     background: var(--shades-of-blue);
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
 
     display: flex;
     flex-direction: column;
@@ -43,7 +43,7 @@ body {
 
 main {
     background-color: var(--neutral);
-    margin-top: 64px;
+    margin: 64px 0;
 
     display: flex;
     flex-direction: column;
