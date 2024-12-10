@@ -94,7 +94,7 @@ input[type=text] {
     line-height: 19px;
 }
 
-#adicionar-botao {
+#adicionar-item {
     text-align: center;
     padding: 12px 16px;
     border-radius: 24px;
@@ -146,7 +146,7 @@ input[type="checkbox"]:checked {
     accent-color: var(--black);
 }
 
-.botao-acao {
+.item-lista-button {
     background-color: transparent;
     border: none;
 }

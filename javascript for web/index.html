@@ -16,14 +16,14 @@
     <main>
         <img src="./img/bag.png" alt="sacola de compras">
         <form>
-            <input id="input-item" type="text" placeholder="Digite o item que deseja adicionar"></input>
-            <button id="adicionar-botao">Salvar item</button>
+            <input class="input-item" id="input-item" type="text" placeholder="Digite o item que deseja adicionar"></input>
+            <button class="button-item" id="adicionar-item">Salvar item</button>
         </form>
 
         <h2>Lista de compras</h2>
         <hr />
 
-        <ul>
+        <ul id="lista-de-compras">
             <li>
                 <div class="item-lista-container">
 
@@ -39,10 +39,10 @@
                     </div>
 
                     <div>
-                        <button class="botao-acao">
+                        <button class="item-lista-button">
                             <img src="./img/delete.svg" alt="remover">
                         </button>
-                        <button class="botao-acao">
+                        <button class="item-lista-button">
                             <img src="./img/edit.svg" alt="editar">
                         </button>
                     </div>
