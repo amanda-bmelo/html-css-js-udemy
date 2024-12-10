@@ -1,59 +1,59 @@
 var count = 1;
 const item = document.getElementById("input-item");
-const botaoSalvarItem = document.getElementById("adicionar-item");
-const listaDeCompras = document.getElementById("lista-de-compras");
+const buttonSaveItem = document.getElementById("add-item");
+const shopList = document.getElementById("shopping-list");
 
-botaoSalvarItem.addEventListener("click", adicionarItem);
+buttonSaveItem.addEventListener("click", addItem);
 
-function adicionarItem(evento) {
+function addItem(evento) {
     evento.preventDefault()
     count++;
 
-    // Item da lista
-    const itemDaLista = document.createElement("li");
-    const containerItemLista = document.createElement("div");
-    containerItemLista.classList.add("item-lista-container");
+    // Item da list
+    const itemList = document.createElement("li");
+    const containerItemList = document.createElement("div");
+    containerItemList.classList.add("item-list-container");
 
-    // Container da lista
-    const containerNomeDoItem = document.createElement("div");
-    containerNomeDoItem.classList.add("container-nome-compra");
+    // Container da list
+    const containerItemName = document.createElement("div");
+    containerItemName.classList.add("container-shop-name");
 
-    adicionarCheckbox(containerNomeDoItem);
+    addCheckbox(containerItemName);
 
-    const nomeDoItem = document.createElement("p");
-    nomeDoItem.innerText = item.value;
-    containerNomeDoItem.appendChild(nomeDoItem);
+    const itemName = document.createElement("p");
+    itemName.innerText = item.value;
+    containerItemName.appendChild(itemName);
 
-    // Botões do item da lista
-    const containerBotoes = document.createElement("div");
-    adicionarBotoes(containerBotoes);
+    // Botões do item da list
+    const containerButtons = document.createElement("div");
+    addButtons(containerButtons);
     
-    // Unindo os conteúdos dentro da lista
-    containerItemLista.appendChild(containerNomeDoItem);
-    containerItemLista.appendChild(containerBotoes);
-    itemDaLista.appendChild(containerItemLista);
-    listaDeCompras.appendChild(itemDaLista);
+    // Unindo os conteúdos dentro da list
+    containerItemList.appendChild(containerItemName);
+    containerItemList.appendChild(containerButtons);
+    itemList.appendChild(containerItemList);
+    shopList.appendChild(itemList);
 }
 
-function adicionarBotoes(containerBotoes) {
-    const botaoRemover = document.createElement("button");
-    botaoRemover.classList.add("item-lista-button");
-    const imagemRemover = document.createElement("img");
-    imagemRemover.src = "img/delete.svg";
-    imagemRemover.alt = "Remover";
-    botaoRemover.appendChild(imagemRemover);
-    containerBotoes.appendChild(botaoRemover);
+function addButtons(containerButtons) {
+    const buttonDelete = document.createElement("button");
+    buttonDelete.classList.add("item-list-button");
+    const imagemDelete = document.createElement("img");
+    imagemDelete.src = "img/delete.svg";
+    imagemDelete.alt = "Delete";
+    buttonDelete.appendChild(imagemDelete);
+    containerButtons.appendChild(buttonDelete);
 
-    const botaoEditar = document.createElement("button");
-    botaoEditar.classList.add("item-lista-button");
-    const imagemEditar = document.createElement("img");
-    imagemEditar.src = "img/edit.svg";
-    imagemEditar.alt = "Editar";
-    botaoEditar.appendChild(imagemEditar);
-    containerBotoes.appendChild(botaoEditar);
+    const buttonEdit = document.createElement("button");
+    buttonEdit.classList.add("item-list-button");
+    const imagemEdit = document.createElement("img");
+    imagemEdit.src = "img/edit.svg";
+    imagemEdit.alt = "Edit";
+    buttonEdit.appendChild(imagemEdit);
+    containerButtons.appendChild(buttonEdit);
 }
 
-function adicionarCheckbox(containerNomeDoItem) {
+function addCheckbox(containerItemName) {
     const checkboxDiv = document.createElement("div");
     checkboxDiv.classList.add("checkbox-container");
     
@@ -67,5 +67,5 @@ function adicionarCheckbox(containerNomeDoItem) {
 
     checkboxLabel.appendChild(checkbox);
     checkboxDiv.appendChild(checkboxLabel);
-    containerNomeDoItem.appendChild(checkboxDiv);
+    containerItemName.appendChild(checkboxDiv);
 }

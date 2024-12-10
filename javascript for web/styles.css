@@ -47,7 +47,7 @@ main {
 
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 12px;
 
     width: 440px;
     padding: 56px;
@@ -62,6 +62,7 @@ h2 {
     font-size: 20px;
     line-height: 33px;
     text-align: left;
+    margin-top: 24px;
 }
 
 hr {
@@ -94,7 +95,7 @@ input[type=text] {
     line-height: 19px;
 }
 
-#adicionar-item {
+#add-item {
     text-align: center;
     padding: 12px 16px;
     border-radius: 24px;
@@ -113,13 +114,13 @@ form {
     gap: 8px;
 }
 
-.item-lista-container {
+.item-list-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.container-nome-compra {
+.container-shop-name {
     display: flex;
 }
 
@@ -127,7 +128,7 @@ ul {
     width: 100%;
 }
 
-.item-lista-texto {
+.item-list-text {
     font-size: 16px;
     line-height: 20px;
 }
@@ -146,7 +147,11 @@ input[type="checkbox"]:checked {
     accent-color: var(--black);
 }
 
-.item-lista-button {
+.item-list-button {
     background-color: transparent;
     border: none;
+}
+
+.item-time {
+    font-size: small;
 }
