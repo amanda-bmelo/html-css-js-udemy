@@ -61,7 +61,7 @@ h2 {
     color: var(--primary-color);
     font-size: 20px;
     line-height: 33px;
-    text-align: left;
+    text-align: left!;
     margin-top: 24px;
 }
 
@@ -154,4 +154,8 @@ input[type="checkbox"]:checked {
 
 .item-time {
     font-size: small;
+}
+
+.container-shop-name:has(input[type="checkbox"]:checked) > p {
+    text-decoration: line-through;
 }

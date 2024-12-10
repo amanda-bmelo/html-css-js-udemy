@@ -1,34 +1,35 @@
-var count = 1;
+let count = 1;
 const item = document.getElementById("input-item");
 const buttonSaveItem = document.getElementById("add-item");
 const shopList = document.getElementById("shopping-list");
+const purchasedList = document.getElementById("purchased-list");
 
 buttonSaveItem.addEventListener("click", addItem);
 
-function addItem(evento) {
-    evento.preventDefault()
+function addItem(event) {
+    event.preventDefault()
     count++;
 
-    // Item da list
+    // Item da lista
     const itemList = document.createElement("li");
     const containerItemList = document.createElement("div");
     containerItemList.classList.add("item-list-container");
 
-    // Container da list
+    // Container da lista
     const containerItemName = document.createElement("div");
     containerItemName.classList.add("container-shop-name");
 
-    addCheckbox(containerItemName);
+    addCheckbox(containerItemName, itemList);
 
     const itemName = document.createElement("p");
     itemName.innerText = item.value;
     containerItemName.appendChild(itemName);
 
-    // Botões do item da list
+    // Botões do item da lista
     const containerButtons = document.createElement("div");
     addButtons(containerButtons);
     
-    // Unindo os conteúdos dentro da list
+    // Unindo os conteúdos dentro da lista
     containerItemList.appendChild(containerItemName);
     containerItemList.appendChild(containerButtons);
     itemList.appendChild(containerItemList);
@@ -53,19 +54,28 @@ function addButtons(containerButtons) {
     containerButtons.appendChild(buttonEdit);
 }
 
-function addCheckbox(containerItemName) {
+function addCheckbox(containerItemName, itemList) {
     const checkboxDiv = document.createElement("div");
     checkboxDiv.classList.add("checkbox-container");
     
     const checkboxLabel = document.createElement("label");
-    checkboxLabel.for = `checkbox-${count}`;
+    const checkboxId = `checkbox-${count}`;
+    checkboxLabel.for = checkboxId;
 
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";
-    checkbox.id = `checkbox-${count}`;
+    checkbox.id = checkboxId;
     checkbox.classList.add("checkbox-input");
 
     checkboxLabel.appendChild(checkbox);
     checkboxDiv.appendChild(checkboxLabel);
     containerItemName.appendChild(checkboxDiv);
+
+    checkboxLabel.addEventListener("click", function(event) {
+        if (checkbox.checked) {
+            purchasedList.appendChild(itemList);
+        } else {
+            shopList.appendChild(itemList);
+        }
+    })
 }
