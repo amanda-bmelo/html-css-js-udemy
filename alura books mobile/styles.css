@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Numans&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 /* RESET CSS */
 * {
@@ -18,18 +19,20 @@ ul {
 }
 
 :root {
-    --primary-color: hsl(330, 64%, 57%);
-    --secondary-color: #c053a1;
+    --primary-color: hsl(30, 85%, 55%);
+    --secondary-color: hsl(30, 85%, 35%);
     --background-color: #EBECEE;
     --secondary-white: white;
-    --title-family-font: "Krona One", sans-serif;
-    --text-family-font: 'Numans', sans-serif;
+    --text-family-font: "Poppins";
+    --shades-of-blue: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --secondary-blue: #326589;
 }
 
 
 /* BODY */
 body {
     background-color: var(--background-color);
+    font-family: var(--text-family-font);
 }
 
 h1 {
@@ -43,6 +46,7 @@ h1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .container {
@@ -63,4 +67,47 @@ h1 {
 
 .container__image {
     padding: 1em;
+}
+
+.menu-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+#menu {
+    display: none;
+}
+
+.container__button:checked~.menu-list {
+    display: block;
+}
+
+.menu-list__title,
+.menu-list__item {
+    padding: 1em;
+    background-color: var(--secondary-white);
+}
+
+.menu-list__title {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.menu-list__link {
+    background: var(--shades-of-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+}
+
+
+.container:has(input[type="checkbox"]:checked) > label {
+    background-color: var(--secondary-blue);
+}
+
+.container:has(input[type="checkbox"]:checked) .header__mobile-menu {
+    background-image: url("./assets/Menu\ Aberto.svg");
 }
