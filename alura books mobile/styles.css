@@ -1,0 +1,66 @@
+
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: inherit;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    display: block;
+    list-style-type: none;
+}
+
+:root {
+    --primary-color: hsl(330, 64%, 57%);
+    --secondary-color: #c053a1;
+    --background-color: #EBECEE;
+    --secondary-white: white;
+    --title-family-font: "Krona One", sans-serif;
+    --text-family-font: 'Numans', sans-serif;
+}
+
+
+/* BODY */
+body {
+    background-color: var(--background-color);
+}
+
+h1 {
+    background-color: var(--secondary-white);
+}
+
+
+/* Header */
+.header {
+    background-color: var(--secondary-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__mobile-menu{
+    width: 24px;
+    height: 24px;
+    background-image: url("./assets/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 1em;
+    display: inline-block;
+}
+
+.container__image {
+    padding: 1em;
+}
