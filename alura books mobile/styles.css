@@ -157,6 +157,10 @@ h1 {
 }
 
 /* CAROUSEL */
+.carousel {
+    padding-bottom: 1em;
+}
+
 .carousel__title {
     color: var(--primary-color);
     background-color: var(--secondary-white);
@@ -202,6 +206,7 @@ h1 {
 .description__title {
     color: var(--primary-color);
     font-weight: 700;
+    font-size: medium;
 }
 
 .description__title-book {
@@ -229,9 +234,48 @@ h1 {
     margin: 0 0.5em;
 }
 
+.buttons__item > img {
+    max-width: 80%;
+}
+
 .buttons__anchor {
     background-color: var(--primary-color);
     padding: 1em 2.2em;
     color: var(--secondary-white);
     font-weight: 700;
+}
+
+
+/* TOPICS */
+
+.topics {
+    background: var(--shades-of-blue);
+    text-align: center;
+    padding: 1em 0;
+}
+
+.topics__title {
+    color: var(--secondary-white);
+    font-weight: 500;
+    font-size: x-large;
+    margin: 1em;
+}
+
+.topics__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.topics__item {
+    margin: 2em 0.5em;
+}
+
+.topics__link {
+    color: var(--secondary-white);
+    padding: 1em;
+    background-color: var(--primary-color);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
 }
