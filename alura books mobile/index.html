@@ -75,8 +75,14 @@
 
         <div class="container">
             <a href="#"><img src="assets/Favoritos.svg" alt="Meus favoritos" class="container__image icon favorite"></a>
-            <a href="#"><img src="assets/Compras.svg" alt="Carrinho de compras" class="container__image icon"></a>
-            <a href="#"><img src="assets/Usuario.svg" alt="Meu perfil" class="container__image icon"></a>
+            <a href="#" class="container__link">
+                <img src="assets/Compras.svg" alt="Carrinho de compras" class="container__image icon">
+                <p class="container__text">Minha sacola</p>
+            </a>
+            <a href="#" class="container__link">
+                <img src="assets/Usuario.svg" alt="Meu perfil" class="container__image icon">
+                <p class="container__text">Meu perfil</p>
+            </a>
         </div>
     </header>
 
@@ -89,43 +95,45 @@
     <section class="carousel">
         <h2 class="carousel__title">Novos lançamentos</h2>
 
-        <div class="swiper">
-            <div class="swiper-pagination"></div>
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="assets/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
-                <div class="swiper-slide"><img src="assets/Liderança.svg" alt="Livro sobre liderança em design da alura books"></div>
-                <div class="swiper-slide"><img src="assets/Javascript.svg" alt="Livro sobre javascript assertivo da alurabooks"></div>
-                <div class="swiper-slide"><img src="assets/Guia Front-end.svg" alt="Livro Guia front end"></div>
-                <div class="swiper-slide"><img src="assets/Portugol.svg" alt="Livro sobre portugol"></div>
-                <div class="swiper-slide"><img src="assets/Acessibilidade.svg" alt="Livro sobre acessibilidade"></div>
-            </div>
-        </div>
-
-        <div class="card">
-            <!-- 1ª linha -->
-            <div class="card__description">
-                <!-- 1ª coluna -->
-                <div class="description">
-                    <h3 class="description__title">Talvez você também se interesse por...</h3>
-                    <h2 class="description__title-book">Angular 11 e Firebase</h2>
-                    <p class="description__text">Construa uma aplicação integrada com a plataforma do Google.</p>
+        <div class="carousel__desktop-container">
+            <div class="swiper">
+                <div class="swiper-pagination"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="assets/ApacheKafka.svg" alt="Livro sobre apache kafka e spring boot da alura books"></div>
+                    <div class="swiper-slide"><img src="assets/Liderança.svg" alt="Livro sobre liderança em design da alura books"></div>
+                    <div class="swiper-slide"><img src="assets/Javascript.svg" alt="Livro sobre javascript assertivo da alurabooks"></div>
+                    <div class="swiper-slide"><img src="assets/Guia Front-end.svg" alt="Livro Guia front end"></div>
+                    <div class="swiper-slide"><img src="assets/Portugol.svg" alt="Livro sobre portugol"></div>
+                    <div class="swiper-slide"><img src="assets/Acessibilidade.svg" alt="Livro sobre acessibilidade"></div>
                 </div>
-                <!-- 2ª coluna -->
-                <img src="assets/Angular.svg" class="description__image">
             </div>
-            <!-- 2ª linha -->
-            <div class="card__buttons">
-                <!-- 1ª coluna -->
-                <ul class="buttons">
-                    <li class="buttons__item">
-                        <img src="assets/Favoritos.svg" alt="Favoritar livro">
-                    </li>
-                    <li class="buttons__item">
-                        <img src="assets/Compras.svg" alt="Adicionar ao carrinho de compras">
-                    </li>
-                </ul>
-                <!-- 2ª coluna -->
-                <a href="#" class="buttons__anchor">Saiba Mais</a>
+    
+            <div class="card">
+                <!-- 1ª linha -->
+                <div class="card__description">
+                    <!-- 1ª coluna -->
+                    <div class="description">
+                        <h3 class="description__title">Talvez você também se interesse por...</h3>
+                        <h2 class="description__title-book">Angular 11 e Firebase</h2>
+                        <p class="description__text">Construa uma aplicação integrada com a plataforma do Google.</p>
+                    </div>
+                    <!-- 2ª coluna -->
+                    <img src="assets/Angular.svg" class="description__image">
+                </div>
+                <!-- 2ª linha -->
+                <div class="card__buttons">
+                    <!-- 1ª coluna -->
+                    <ul class="buttons">
+                        <li class="buttons__item">
+                            <img src="assets/Favoritos.svg" alt="Favoritar livro">
+                        </li>
+                        <li class="buttons__item">
+                            <img src="assets/Compras.svg" alt="Adicionar ao carrinho de compras">
+                        </li>
+                    </ul>
+                    <!-- 2ª coluna -->
+                    <a href="#" class="buttons__anchor">Saiba Mais</a>
+                </div>
             </div>
         </div>
     </section>
