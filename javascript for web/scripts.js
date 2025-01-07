@@ -41,6 +41,8 @@ function addItem(event) {
     itemList.appendChild(containerItemList);
     itemList.appendChild(itemData);
     shopList.appendChild(itemList);
+
+    verifyEmptyList();
 }
 
 function addButtons(containerButtons) {
@@ -84,5 +86,19 @@ function addCheckbox(containerItemName, itemList) {
         } else {
             shopList.appendChild(itemList);
         }
+        verifyEmptyList();
     })
 }
+
+const messageEmptyList = document.querySelector('.message-empty-list');
+
+function verifyEmptyList() {
+    const listItems = shopList.querySelectorAll("li");
+    if (listItems.length === 0) {
+        messageEmptyList.style.display = "block";
+    } else {
+        messageEmptyList.style.display = "none";
+    }
+}
+
+verifyEmptyList();
