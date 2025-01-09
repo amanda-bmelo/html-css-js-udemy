@@ -48,16 +48,17 @@
             </ul>
         </nav>
     </aside>
+
     <main>
         <div class="container-upload-image">
                 <div class="container-image">
                     <img src="./assets/imagem1.png" alt="" class="main-image">
                 </div>
                 <button id="upload-btn">Carregar imagem</button>
-                <input type="file" id="image-upload" accept="image/" style="display: none" />
+                <input type="file" id="image-upload" accept="image/*" style="display: none" />
                 <div class="container-image-name">
-                    <p>image_projeto.png</p>
-                    <img src="./assets/close.svg">
+                    <p class="image-name">imagem_do_projeto.png</p>
+                    <img src="./assets/close.svg" class="remove-image">
                 </div>
         </div>
 
@@ -76,12 +77,7 @@
                     <label for="category">Tags</label>
                     <input type="text" id="category" name="category" />
                 </div>
-                <ul class="tags-list">
-                    <li>
-                        <p>Front-end</p>
-                        <img src="./assets/close-black.svg">
-                    </li>
-                </ul>
+                <ul class="tags-list" id="tags-list"></ul>
                 <div class="container-buttons">
                     <button class="button-discard">Descartar</button>
                     <button class="button-publish">Publicar</button>
@@ -89,7 +85,7 @@
             </form>
         </div>
     </main>
-    <script src="script.js"></script>
+    <script src="./scripts.js"></script>
 </body>
 
 </html>

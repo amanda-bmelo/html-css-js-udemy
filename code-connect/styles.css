@@ -111,8 +111,7 @@ form div label {
     margin-bottom: 8px;
 }
 
-form div input,
-textarea {
+form div input, textarea {
     width: 100%;
     padding: 8px 16px;
     background-color: var(--secondary-color);
@@ -132,6 +131,8 @@ textarea {
 
 .tags-list {
     display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .tags-list li {
@@ -141,6 +142,10 @@ textarea {
     gap: 10px;
     padding: 4px 8px;
     border-radius: 4px;
+}
+
+.remove-tag, .remove-image {
+    cursor: pointer;
 }
 
 .container-buttons {
@@ -157,6 +162,7 @@ textarea {
     font-family: var(--font-family);
     font-size: 18px;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .button-discard {
@@ -222,7 +228,7 @@ textarea {
 
 .container-upload-image button {
     margin: 16px 0 8px 0;
-    background-color: var(--itens-background);
+    background-color: var(--secondary-dark);
     border: 1px solid var(--secondary-color);
     border-radius: 8px;
     color: var(--secondary-color);
@@ -233,6 +239,16 @@ textarea {
     font-weight: 600;
     font-size: 18px;
     position: relative;
+    cursor: pointer;
+}
+
+.container-upload-image button:hover {
+    font-weight: bold;
+    background-color: var(--background-color);
+}
+
+.container-upload-image button:active {
+    background-color: black;          
 }
 
 .container-upload-image button::after {
